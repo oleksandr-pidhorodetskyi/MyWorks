@@ -1,0 +1,129 @@
+/* Write your code here */
+.header {
+    text-align: center;
+}
+.main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.buttons {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.buttons__containt {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    width: 40%;
+    margin-left: 9vw;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 4vh;
+}
+.buttons__button {
+    width: 160px;
+    height: 40px;
+    border-radius: 6px;
+    border:transparent;
+    color: #fff;
+    background-color: #20ba96;
+}
+.containers {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    column-gap: 5vh;
+    grid-template-columns: 1fr 1fr;
+}
+.containers__container {
+    border: 2px solid #cccccc;
+    height: 60vh;
+    width: 30vw;
+    overflow-y: scroll;
+}
+.container-JS__item {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+    margin: 10px;
+}
+
+.item-fetch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: #eeeeee;
+    padding: 5px;
+}
+.item-fetch__title {
+    font-size: 19px;
+    margin: 0;
+    margin-bottom: 1vh;
+}
+.item-fetch__buttons {
+    margin-bottom: 1vh;
+}
+.button {
+    width: 65px;
+    height: 27px;
+    border: transparent;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 12px;
+}
+.fetch-buttons__edit {
+    background-color: #1a96c7;
+}
+.fetch-buttons__delete {
+    background-color: #ab2451;
+}
+.item-fetch__change {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.item-fetch__input {
+    width: 60%;
+    height: 40%;
+}
+.item-fetch-button__save {
+    background-color: #20ba96;
+    margin-left: 1vh;
+}
+.hidden {
+    display: none;
+}
+
+
+#loading {
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid #f3f3f3;
+    border-top: 6px solid #9c41f2;
+    border-radius: 100%;
+    margin: auto;
+    visibility: hidden;
+    animation: spin 1s infinite linear;
+}
+#loading.display {
+    visibility: visible;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
