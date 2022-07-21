@@ -1,0 +1,96 @@
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./scss/index.scss ***!
+  \**********************************************************************************************************/
+body {
+  display: flex;
+  align-items: center;
+  margin-top: 15vh;
+  flex-direction: column;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.hidden {
+  display: none !important; }
+
+.main__container {
+  background-color: #f1def1;
+  padding: 2vh 6vh 6vh 6vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.main__title {
+  text-align: center;
+  margin-bottom: 3vh; }
+
+.main__score {
+  text-align: center;
+  margin-bottom: 3vh; }
+
+.main__rules {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5em;
+  letter-spacing: 0.2em; }
+
+.main__choose {
+  width: 70vh;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 90%;
+  margin-bottom: 4vh; }
+
+.main__result {
+  font-size: 22px; }
+
+.main__buttons {
+  display: flex;
+  gap: 6vh; }
+
+.result__first, .result__second {
+  font-weight: 700; }
+
+.result__round, .result__winner {
+  text-align: center; }
+
+.choose__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px; }
+
+.choose__character {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-size: 22px;
+  font-weight: 600;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #e9b3b3;
+  height: 10vh; }
+  .choose__character:hover {
+    background-color: #f29c9c; }
+  .choose__character:active {
+    background-color: #eea2a2;
+    border: 1px solid #f06c6c; }
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #535353;
+  text-decoration: none;
+  height: 5vh;
+  width: 20vh;
+  border: 1px solid;
+  font-size: 17px;
+  background-color: #F0F0F0;
+  border-radius: 15px; }
+  .button:hover {
+    background-color: #c8c8c8;
+    color: #fff;
+    font-weight: 600; }
+

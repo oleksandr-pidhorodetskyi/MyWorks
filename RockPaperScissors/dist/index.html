@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Tools</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+      <!-- <link rel="stylesheet" type="text/css" href="dist/style.css"> -->
+  <script defer src="app.js"></script><link href="style.css" rel="stylesheet"></head>
+
+  <body>   
+    <main class="main">
+      <div class="main__container">
+
+        <div class="main__info">
+          <h1 class="main__title">Rock Paper Scissors</h1>
+          
+          <p class="main__rules">
+            - Scissors beats a paper,<br>
+            - Paper beats rock,<br>
+            - Rock beats scissors.<br>
+            - And we play up to three wins!
+          </p>
+          <h2 class="main__score hidden"></h2>
+        </div>
+
+        <div class="main__choose hidden"></div>
+        <div class="main__result hidden">
+          <h3 class="result__winner"></h3>
+          <p >You choose: <span class="result__first"></span></p>
+          <p >Opponent choose: <span class="result__second"></span></p>
+          <h2 class="result__round"></h2>
+        </div>
+        <div class="main__result-global hidden">
+          <h2 class="result-global__text"></h2>
+        </div>
+
+        <div class="main__buttons">
+          <button class="main__start button">Let`s play!</button>
+          <button class="main__restart button hidden">Play again!</button>
+          <a class="main__reset button hidden" href="#">Reset</a>
+        </div>        
+
+      </div>      
+    </main>
+    <!-- <script src="./dist/bundle.js"></script> -->
+  </body>
+</html>
