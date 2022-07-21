@@ -1,0 +1,81 @@
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./scss/index.scss ***!
+  \**********************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400; }
+
+.container {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); }
+
+.calendar {
+  width: 50vh;
+  height: 54vh;
+  border-radius: 20px;
+  background-color: #7676a5;
+  box-shadow: 0 0.5vh 2vh rgba(35, 35, 35, 0.415); }
+  .calendar__header {
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vh; }
+  .calendar__weeek {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    width: 100%;
+    height: 5vh; }
+  .calendar__days {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr); }
+  .calendar__day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    margin: 0.5vh;
+    height: 4.8vh;
+    transition: background-color 0.3s;
+    border-radius: 50px; }
+    .calendar__day:hover:not(.today) {
+      background-color: #8d8dbb;
+      border: 1px solid #404070; }
+    .calendar__day-before, .calendar__day-after {
+      opacity: 0.4; }
+    .calendar__day-today {
+      background-color: #cdcdcd;
+      color: #5e5e5e; }
+
+.header-calendar__title {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+
+.button {
+  font-size: 28px;
+  background-color: transparent;
+  border: transparent;
+  color: #cdcdcd; }
+  .button__forward {
+    margin-left: 1vh; }
+
+.week__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  letter-spacing: 0.1em; }
+
