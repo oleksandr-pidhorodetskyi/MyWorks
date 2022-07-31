@@ -78,6 +78,7 @@ body {
     font-weight: 500;
     font-size: 36px;
     color: #000000;
+    margin-right: 4vh;  
 }
 .header__menu {
 }
@@ -115,7 +116,7 @@ body {
     color: #050038;
     display: flex;
     align-items: center;
-
+    width: 6vh;
 }
 .buttons-header__sign-in:hover {
     text-shadow: 1px 1px 20px #05003859;
