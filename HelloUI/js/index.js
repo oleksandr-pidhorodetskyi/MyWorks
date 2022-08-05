@@ -29,3 +29,20 @@ sliderButtons.forEach((button)=>{
     })
 })
 //-------------------------------
+// button UP
+var smoothJumpUp = function() {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        window.scrollBy(0,-50);
+        setTimeout(smoothJumpUp, 10);
+    }
+}
+
+window.onscroll = function() {
+  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrolled > 100) {
+      document.querySelector('.button-up').style.display = 'block';
+  } else {
+      document.querySelector('.button-up').style.display = 'none';
+  }
+}
+//-------------------------------

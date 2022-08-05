@@ -50,6 +50,7 @@ body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 800;
     font-size: 20px;
+    color: #050038;
 }
 
 .text {
@@ -57,6 +58,39 @@ body {
     font-size: 20px;
     color: #5B5E6D;
 }
+
+
+
+
+.button-up {
+    background: url("../img/top-icon.png") no-repeat top left;
+    height: 60px;
+    width: 60px;
+    bottom: 50px;
+    right: 40px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+    animation-name: appear-button-Up;
+    animation-duration: 1s;
+}
+
+@keyframes appear-button-Up {
+    from {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+}
+.button-up:hover {
+    background: url("../img/top-icon-hover.png") no-repeat top left;
+    transition: 0.5s;
+}
+
 /* ===================================================================== */
 /* ------------------------------- HEADER ---------------------------- */
 .header {
@@ -294,7 +328,143 @@ body {
     font-size: 19px;
     font-weight: 700;
 }
-.button {
+.award__blocks {
+}
+.blocks-award {
+}
+.blocks-award__block {
+    display: flex;
+    margin-bottom: 10vh;
+}
+.blocks-award__info-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4vw;
+}
+.blocks-award__info-left {
+    display: flex;
+    margin-left: 6vw;
+}
+
+.blocks-award__item {
+    width: 70%;
+    padding-top: 4vw;
+}
+.blocks-award__title {
+    font-size: 72px;
+    margin-bottom: 4vh;
+}
+
+.blocks-award__text {
+    font-size: 20px;
+    margin-bottom: 3vh;
+}
+.blocks-award__learn {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: transparent;
+    border-bottom: 3px solid #0555FF;
+}
+.blocks-award__learn:hover {
+    border-bottom: 3px solid #0554ff77;
+    color: rgba(0, 0, 0, 0.476);
+    transition: 0.5s ease;
+}
+
+.blocks-award__picture {
+
+}
+.blocks-award__img {
+    width: 30vw;
+}
+/* -------------------------------  ---------------------------- */
+
+/* ------------------------------- WORD ---------------------------- */
+.word {
+    background-color: #F8F8FA;
+}
+.word__container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0px;
+}
+.word__suptitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.word__title {
+    font-size: 72px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.word__twits {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 30px;
+    column-gap: 22px;
+}
+.twits {
+}
+.twits__item {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+.twits__item:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.211);
+    transition: 0.3s;
+}
+.twits__info {
+    display: flex;
+    align-items: flex-start;
+    height: 60px;
+}
+.twits__info::after {
+    content: url(../img/word/twitter-icon.png);
+    position: relative;
+    right: 8px;
+    top: 13px;
+}
+.twits__img {
+    margin-right: 10px;
+}
+.twits__names {
+    width: 100%;
+}
+.twits__name {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 7px;
+}
+.twits__name-verified::after {
+    content: url(../img/word/twitter-verified.png);
+    position: relative;
+    left: 5px;
+    top: 3px;
+}
+.twits__nickname {
+    font-family: 'Inter';
+    font-size: 16px;
+}
+.twits__post {
+    padding: 7px 20px 0px 0px;
+}
+.twits__text {
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 24px;
+    color: #050038;
+}
+.twits__text:not(:last-child) {
+    margin-bottom: 30px;
 }
 /* -------------------------------  ---------------------------- */
 
