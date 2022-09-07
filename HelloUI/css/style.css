@@ -58,10 +58,6 @@ body {
     font-size: 20px;
     color: #5B5E6D;
 }
-
-
-
-
 .button-up {
     background: url("../img/top-icon.png") no-repeat top left;
     height: 60px;
@@ -426,7 +422,7 @@ body {
     height: 60px;
 }
 .twits__info::after {
-    content: url(../img/word/twitter-icon.png);
+    content: url("../img/word/twitter-icon.png");
     position: relative;
     right: 8px;
     top: 13px;
@@ -445,7 +441,7 @@ body {
     margin-bottom: 7px;
 }
 .twits__name-verified::after {
-    content: url(../img/word/twitter-verified.png);
+    content: url("../img/word/twitter-verified.png");
     position: relative;
     left: 5px;
     top: 3px;
@@ -466,5 +462,143 @@ body {
 .twits__text:not(:last-child) {
     margin-bottom: 30px;
 }
+/* -------------------------------  ---------------------------- */
+/* ------------------------------- FOOTER ---------------------------- */
+.footer {
+    background-image: url("../img/footer/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer__container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__title {
+    width: 45vw;
+    font-size: 72px;
+    word-spacing: 0.1em;
+    line-height: 1.2em;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0px 40px 0px;
+}
+.footer__email {
+    font-family: 'Inter';
+    display: flex;
+    margin-bottom: 150px;
+}
+.footer__enter {
+    background-color: transparent;
+    width: 528px;
+    height: 80px;  
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px 0px 0px 10px;
+    color: #C1C1C1;
+    font-size: 22px;
+    padding-left: 30px;
+}
+.footer__get {
+    width: 221px;
+    height: 80px; 
+    background: #0555FF;
+    border-radius: 0px 10px 10px 0px;
+    color: #FFFFFF;
+    font-size: 22px;
+}
+.footer__get:hover {
+    background-color: #0554ff78;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.801);
+    border: 1px solid #0554ffc3;
+}
+.footer__content {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.footer__spellon {
+    flex: 0 1 60%;
+    margin-right: 10vw;
+}
+.spellon {
+    font-family: 'Inter';
+}
+.spellon__title {
+    font-weight: 700;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.spellon__list {
+    width: 100%;
+    margin-bottom: 27px;
+}
+.spellon__item {
+    font-size: 16px;
+    color: #7884A6;
+}
+.spellon__item:hover {
+    color: #b1b7c7;
+}
+.spellon__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.spellon__companies {
+    display: flex;
+    gap: 20px;
+}
+.companies-spellon {
+}
+.companies-spellon__item {
+
+}
+.companies-spellon__img {
+    height: 20px;
+}
+.footer__lists {
+    width: 100%;
+}
+.lists-footer {
+    display: flex;
+}
+
+.lists-footer__item {
+    flex: 0 1 33.333%;
+}
+.lists-footer__title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 27px;
+}
+.lists-footer__list {
+}
+
+.lists-footer__text {
+    font-family: 'Inter';
+    font-size: 16px;
+    color: #7884A6;
+}
+.lists-footer__text:hover {
+    color: #b1b7c7;
+}
+.lists-footer__text:not(:last-child) {
+    margin-bottom: 25px;
+}
+.footer__copyright {
+    font-family: 'Roboto';
+    font-size: 16px;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: rgb(15, 9, 55, 0.5);
+}
+
 /* -------------------------------  ---------------------------- */
 
