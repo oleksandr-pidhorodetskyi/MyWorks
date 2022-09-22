@@ -1,0 +1,12 @@
+.navbar{
+    background-color: #343a40;
+}
+.computer{ 
+    background: linear-gradient(rgba(0, 0, 0, 0.712),
+  rgba(0, 0, 0, 0.712)), url(../img/header-bg.jpg);
+    background-size: cover;
+    background-position: center 60%;
+}
+.learn, .footer{
+    background-color: #343a40;
+}
